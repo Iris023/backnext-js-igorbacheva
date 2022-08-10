@@ -1,0 +1,113 @@
+body {
+    background-image: url(bg.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #222831;
+}
+
+.heading {
+    font-size: 25px;
+    font-family: 'EB Garamond', serif;
+    text-transform: uppercase;
+    /* background-color: #c4c3b6a8; */
+    color: #e4dc98de;
+	text-shadow: 1px 0 1px #000, 
+0 1px 1px #000, 
+-1px 0 1px #000, 
+0 -1px 1px #000;
+    margin: 10px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.btn {
+    width: 7%;
+    background-color: #e4dc98de;
+    border: none;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.famousArt {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.paintings {
+    height: 520px;
+}
+
+.name {
+    position: absolute;
+    font-size: 25px;
+    left: 20px;
+    font-family: 'EB Garamond', serif;
+    color: rgb(230, 221, 221);
+    text-shadow: 1px 0 1px #000, 
+0 1px 1px #000, 
+-1px 0 1px #000, 
+0 -1px 1px #000;
+}
+
+.text {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    color: white;
+    text-shadow: 1px 0 1px #000, 
+0 1px 1px #000, 
+-1px 0 1px #000, 
+0 -1px 1px #000;
+    font-family: 'EB Garamond', serif;
+}
+
+
+@media all and (max-width: 800px) {
+    .container {
+        margin-top: 45px;
+    }
+    .paintings {
+        height: 460px;
+    }
+    .btn {
+        width: 10%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .heading {
+        margin: 0px;
+        font-size: 21px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+    }
+    .btn {
+        width: 98%;
+        padding: 5px;
+    }
+    .paintings {
+        width: 98%;
+        height: auto;
+    }
+    .name {
+        top: -30px;;
+        left: 5px;
+    }
+    .text {
+        bottom: -15px;
+        right: 5px;
+        color: rgb(230, 221, 221);
+    }
+}
